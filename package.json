@@ -1,0 +1,50 @@
+{
+  "name": "TaskManagement-client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^1.2.1",
+    "bootstrap": "^5.2.3",
+    "cleave.js": "^1.6.0",
+    "html-to-image": "^1.11.1",
+    "moment": "^2.29.4",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.0",
+    "react-bootstrap-sweetalert": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "react-json-csv": "^2.0.0",
+    "react-json-to-csv": "^1.2.0",
+    "react-router": "^6.4.5",
+    "react-router-dom": "^6.4.5",
+    "react-scripts": "5.0.1",
+    "react-toastify": "^9.0.3",
+    "react-window": "^1.8.8",
+    "read-excel-file": "^5.5.3",
+    "styled-components": "^5.3.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
