@@ -1,24 +1,21 @@
-import React from 'react'
-import Loder from '../../Assets/Images/FullSecrenLoder3.gif'
-import Styled from 'styled-components'
+import React, { Fragment } from 'react'
+import { useSelector } from 'react-redux'
+
+
+
 const FullScrenLoder = () => {
+  const loader = useSelector((state)=> state.settings.loader)
   return (
-    <Wrapper>
-        <div className='section'>
-        <div className='ImgDiv '>
-        <figure>
-        <img src={Loder} alt="Loding..." />
-        </figure>
+    <Fragment>
+      <div className={loader+"LoadingOverlay d-none"}>
+        <div className="Line-Progress">
+          <div className="indeterminate">
+
+          </div>
         </div>
-        </div>
-    </Wrapper>
+      </div>
+    </Fragment>
   )
 }
-const Wrapper = Styled.section`
-.ImgDiv{
-    margin:auto
-    margin-top:-50px
-}
-`
 
 export default FullScrenLoder

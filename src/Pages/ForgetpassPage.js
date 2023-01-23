@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { Fragment ,Suspense,lazy} from 'react';
+import LaryLoder from '../Conponents/MasterLayout/LaryLoder';
 
+const Forgetpass = lazy(()=>import('../Conponents/Forgetpass/Forgetpass'));
 const ForgetpassPage = () => {
     return (
-        <div>
-            
-        </div>
+        <Fragment>
+            <Suspense fallback={<LaryLoder/>}>
+                <Forgetpass/>
+            </Suspense>
+        </Fragment>
     );
 };
 
