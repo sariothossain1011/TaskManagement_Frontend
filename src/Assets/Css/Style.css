@@ -40,6 +40,38 @@ a:hover {
   box-shadow: none !important;
 }
 
+.image-div{
+  min-height: 100vh;
+  max-width: 100%;
+  background-image: url("../Images/404.webp") ;
+  background-repeat: no-repeat;
+  background-size: cover
+
+}
+.text-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+.text-div{
+  text-align: center;
+}
+.text-div h1{
+  font-size: 60px;
+  font-weight: 600;
+  padding: 15px 0;
+}
+.text-div p{
+  font-size: 35px;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+.text-div button{
+  font-size: 20px ;
+  padding: 5px 30px ;
+  margin: 10px 0px;
+}
 @import "Sidebar.css";
 @import "Progress.css";
 @import "Dropdownmenu.css";
