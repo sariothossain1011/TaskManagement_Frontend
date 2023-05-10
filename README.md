@@ -3,9 +3,9 @@
 # Live Preview 1 :  (https://task-management-client-eta.vercel.app/)
 
 ![myimage-alt-tag](https://i.postimg.cc/d14tyNT0/dashboard.png)
-![myimage-alt-tag](https://i.ibb.co/kKQ2j9V/profile.png)
-![myimage-alt-tag](https://i.ibb.co/cJDh0CK/profile.png)
-![myimage-alt-tag](https://i.postimg.cc/DZs7ftXx/screencapture-business-table-vercel-app-2023-04-06-00-48-16.png)
+![myimage-alt-tag](https://i.postimg.cc/NF8M0G7W/profile.png)
+![myimage-alt-tag](https://i.postimg.cc/Pr2XVR6z/createtask.png)
+![myimage-alt-tag](https://i.postimg.cc/8PPDvb1F/newtask.png)
 # Uses Technology - MERN STACK PROJECT
 - Mongodb
 - Mongodb Aggregation
