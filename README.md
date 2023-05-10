@@ -10,13 +10,14 @@
 - Registration
 - Login 
 - Forget Password
+- Get Profile
 - Update Profile 
 - Create New Task
 - Update Task
 - Delete Task
 - Dashboard ( Count by New ,Completed ,Canceled ,Progress )
 
-# Uses Technology - MERN STACK PROJECT
+# Uses Technology & Packages - MERN STACK PROJECT
 - Mongodb
 - Mongodb Aggregation
 - express js
@@ -27,7 +28,7 @@
 - Reduxjs Toolkit
 - React Toastify
 - CSS 
-- JSX 
 - Asios
 - React icons 
 - React Paginate
+- NodeMailler
