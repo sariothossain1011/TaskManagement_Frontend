@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import CreatePassword from '../../Conponents/AccountRecover/CreatePassword'
+import CreatePassword from '../../Components/AccountRecover/CreatePassword'
 
 const CreatePasswordPage = () => {
   return (

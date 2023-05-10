@@ -1,13 +1,13 @@
 import React, { Fragment,Suspense,lazy } from 'react';
-import LaryLoder from '../Conponents/MasterLayout/LaryLoder';
-import MasterLayout from '../Conponents/MasterLayout/MasterLayout';
+import LazyLoader from '../Components/MasterLayout/LazyLoader';
+import MasterLayout from '../Components/MasterLayout/MasterLayout';
 
-const Canceled = lazy(()=>import('../Conponents/Canceled/Canceled'));
+const Canceled = lazy(()=>import('../Components/Canceled/Canceled'));
 const CanceledPage = () => {
     return (
         <Fragment>
             <MasterLayout>
-                <Suspense fallback={<LaryLoder/>}>
+                <Suspense fallback={<LazyLoader/>}>
                     <Canceled/>
                 </Suspense>
             </MasterLayout>

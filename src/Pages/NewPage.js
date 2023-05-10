@@ -1,12 +1,12 @@
 import React, { Fragment ,Suspense,lazy} from 'react';
-import LaryLoder from '../Conponents/MasterLayout/LaryLoder';
-import MasterLayout from '../Conponents/MasterLayout/MasterLayout';
-const New = lazy(()=>import('../Conponents/New/New'));
+import LazyLoader from '../Components/MasterLayout/LazyLoader';
+import MasterLayout from '../Components/MasterLayout/MasterLayout';
+const New = lazy(()=>import('../Components/New/New'));
 const NewPage = () => {
     return (
         <Fragment>
             <MasterLayout>
-                <Suspense fallback={<LaryLoder/>}>
+                <Suspense fallback={<LazyLoader/>}>
                     <New/>
                 </Suspense>
             </MasterLayout>

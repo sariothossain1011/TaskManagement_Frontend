@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import SendOTP from '../../Conponents/AccountRecover/SendOTP'
+import SendOTP from '../../Components/AccountRecover/SendOTP'
 
 const SendOTPPage = () => {
   return (

@@ -1,5 +1,5 @@
 import Swal from "sweetalert2"
-import { DeteteRequest } from "../ApiSevices/ApiSevices"
+import { DeleteRequest } from "../ApiServices/ApiServices"
 
 export function DeleteTodo(id){
     return Swal.fire({
@@ -12,7 +12,7 @@ export function DeleteTodo(id){
         confirmButtonText: 'Yes, delete it!'
       }).then((result) => {
         if (result.isConfirmed) {
-            return DeteteRequest(id).then((Result)=>{
+            return DeleteRequest(id).then((Result)=>{
                 return Result ;
             })
         }

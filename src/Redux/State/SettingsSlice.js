@@ -6,14 +6,14 @@ export const SettingsSlice = createSlice({
         loader:"d-none"
     },
     reducers:{
-        ShowLoder:(state)=>{
+        ShowLoader:(state)=>{
             state.loader=" "
         },
-        HideLoder:(state)=>{
+        HideLoader:(state)=>{
             state.loader="d-none"
         },
     },
 });
 
-export const {ShowLoder,HideLoder}=SettingsSlice.actions;
+export const {ShowLoader,HideLoader}=SettingsSlice.actions;
 export default SettingsSlice.reducer ;

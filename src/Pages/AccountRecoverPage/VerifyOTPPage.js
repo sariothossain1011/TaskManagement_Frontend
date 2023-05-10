@@ -1,5 +1,5 @@
 import React ,{Fragment}from 'react'
-import VerifyOTP from '../../Conponents/AccountRecover/VerifyOTP'
+import VerifyOTP from '../../Components/AccountRecover/VerifyOTP'
 
 const VerifyOTPPage = () => {
   return (

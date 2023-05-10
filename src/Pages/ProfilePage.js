@@ -1,13 +1,13 @@
 import React, { Fragment ,Suspense,lazy} from 'react';
-import LaryLoder from '../Conponents/MasterLayout/LaryLoder';
-import MasterLayout from '../Conponents/MasterLayout/MasterLayout';
+import LazyLoader from '../Components/MasterLayout/LazyLoader';
+import MasterLayout from '../Components/MasterLayout/MasterLayout';
 
-const Profile = lazy(()=>import('../Conponents/Profile/Profile'));
+const Profile = lazy(()=>import('../Components/Profile/Profile'));
 const ProfilePage = () => {
     return (
         <Fragment>
             <MasterLayout>
-                <Suspense fallback={<LaryLoder/>}>
+                <Suspense fallback={<LazyLoader/>}>
                     <Profile/>
                 </Suspense>
             </MasterLayout>

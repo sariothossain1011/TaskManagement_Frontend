@@ -1,11 +1,11 @@
 import React, { Fragment ,Suspense,lazy} from 'react';
-import LaryLoder from '../Conponents/MasterLayout/LaryLoder';
+import LazyLoader from '../Components/MasterLayout/LazyLoader';
 
-const Registration = lazy(()=>import('../Conponents/Registration/Registration'));
+const Registration = lazy(()=>import('../Components/Registration/Registration'));
 const RegistrationPage = () => {
     return (
         <Fragment>
-            <Suspense fallback={<LaryLoder/>}>
+            <Suspense fallback={<LazyLoader/>}>
                 <Registration/>
             </Suspense>
         </Fragment>

@@ -9,12 +9,12 @@ export const TaskSlice=createSlice({
     },
     reducers:{
         SetNewTask:(state,action)=>{state.New = action.payload},
-        SetConpletedTask:(state,action)=>{state.Completed=action.payload},
+        SetCompletedTask:(state,action)=>{state.Completed=action.payload},
         SetProgressTask:(state,action)=>{state.Progress=action.payload},
         SetCanceledTask:(state,action)=>{state.Canceled=action.payload},
     }
 });
 
-export const {SetNewTask,SetConpletedTask,SetProgressTask,SetCanceledTask}= TaskSlice.actions;
+export const {SetNewTask,SetCompletedTask,SetProgressTask,SetCanceledTask}= TaskSlice.actions;
 
 export default TaskSlice.reducer

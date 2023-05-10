@@ -1,5 +1,5 @@
 import Swal from "sweetalert2"
-import { UpadateRequest } from "../ApiSevices/ApiSevices"
+import { UpdateRequest } from "../ApiServices/ApiServices"
 
 
 export function UpdateTodo(id,status){
@@ -9,7 +9,7 @@ export function UpdateTodo(id,status){
     inputOptions: {New:"New",Completed:"Completed",Canceled:"Canceled",Progress:"Progress"},
     inputValue:status,
   }).then((Result)=>{
-    return UpadateRequest(id,Result.value).then((res)=>{
+    return UpdateRequest(id,Result.value).then((res)=>{
       return res ;
     })
   })

@@ -1,11 +1,11 @@
 import React, { Fragment ,Suspense,lazy} from 'react';
-import LaryLoder from '../Conponents/MasterLayout/LaryLoder';
+import LazyLoader from '../Components/MasterLayout/LazyLoader';
 
-const Notfound = lazy(()=>import('../Conponents/Notfound/Notfound'));
+const Notfound = lazy(()=>import('../Components/Notfound/Notfound'));
 const Page404 = () => {
     return (
         <Fragment>
-            <Suspense fallback={<LaryLoder/>}>
+            <Suspense fallback={<LazyLoader/>}>
             <Notfound/>
             </Suspense>
         </Fragment>

@@ -1,12 +1,12 @@
 
 import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-let EmailRegx = /\S+@\S+\.\S+/;
-let MobileRegx = /(^(\+88|0088)?(01){1}[3456789]{1}(\d){8})$/;
-let PasswordRegx = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
+let EmailRegex = /\S+@\S+\.\S+/;
+let MobileRegex = /(^(\+88|0088)?(01){1}[3456789]{1}(\d){8})$/;
+let PasswordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
 
 class ValidationHelpers{
-    IsEmty(value){
+    IsEmpty(value){
         if(value.length===0){
             return true
         }else{
@@ -14,19 +14,19 @@ class ValidationHelpers{
         }
     };
     IsMobile(value){
-        return !MobileRegx.test(value)
+        return !MobileRegex.test(value)
     };
     IsEmail(value){
-        return !EmailRegx.test(value)
+        return !EmailRegex.test(value)
     };
     IsPassword(value){
-        return !PasswordRegx.test(value)
+        return !PasswordRegex.test(value)
     };
-    SuccessTost(msg){
+    SuccessToast(msg){
         toast.success(msg,{ position: "bottom-center" })
 
     };
-    ErrorTost(msg){
+    ErrorToast(msg){
         toast.error(msg,{ position: "bottom-center" })
         
     };
@@ -42,4 +42,4 @@ class ValidationHelpers{
     
 }
 
-export const {IsEmty,SuccessTost,ErrorTost ,IsEmail,IsMobile,IsPassword,getBase64}= new ValidationHelpers()
+export const {IsEmpty,SuccessToast,ErrorToast ,IsEmail,IsMobile,IsPassword,getBase64}= new ValidationHelpers()
