@@ -3,7 +3,7 @@
 # Live Preview 1 :  (https://task-management-client-eta.vercel.app/)
 
 ![myimage-alt-tag](https://i.postimg.cc/DZs7ftXx/screencapture-business-table-vercel-app-2023-04-06-00-48-16.png)
-![myimage-alt-tag](https://ibb.co/cJDh0CK)
+![myimage-alt-tag]([https://ibb.co/cJDh0CK](https://ibb.co/cJDh0CK))
 ![myimage-alt-tag](https://i.postimg.cc/DZs7ftXx/screencapture-business-table-vercel-app-2023-04-06-00-48-16.png)
 ![myimage-alt-tag](https://i.postimg.cc/DZs7ftXx/screencapture-business-table-vercel-app-2023-04-06-00-48-16.png)
 # Uses Technology - MERN STACK PROJECT
