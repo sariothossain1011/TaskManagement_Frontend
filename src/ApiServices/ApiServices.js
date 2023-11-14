@@ -43,7 +43,6 @@ export function RegistrationRequest(
   return axios
     .post(URL, reqBody)
     .then((res) => {
-      alert(res);
       store.dispatch(HideLoader());
       if (res.status === 200) {
         if (res.data["status"] === "fail") {
@@ -123,7 +122,6 @@ export function TaskListByStatus(Status) {
   return axios
     .get(URL, AxiosHeaders)
     .then((res) => {
-      alert(res)
       store.dispatch(HideLoader());
       if (res.status === 200) {
         if (Status === "New") {
