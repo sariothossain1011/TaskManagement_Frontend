@@ -19,7 +19,7 @@ const Create = () => {
         }else{
             TaskCreate(title,description).then((res)=>{
                 if(res===true){
-                    SuccessToast("Task Create Success")
+                    // SuccessToast("Task Create Success")
                     navigate('/all');
                 }
             })

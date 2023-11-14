@@ -1,4 +1,3 @@
-
 import axios from "axios";
 import {
   getToken,
@@ -18,8 +17,7 @@ import {
 } from "../Redux/State/TaskSlice";
 import store from "../Redux/Store/Store";
 import { ErrorToast, SuccessToast } from "../Helpers/Validation";
-const API = 'https://task-management-server-dusky.vercel.app/api/v1/'
-
+const API = "https://task-management-server-dusky.vercel.app/api/v1/";
 
 let AxiosHeaders = { headers: { token: getToken() } };
 
@@ -89,7 +87,7 @@ export function LoginRequest(email, password) {
       }
     })
     .catch((error) => {
-      store.dispatch(HideLoader())
+      store.dispatch(HideLoader());
       ErrorToast("Something went wrong !");
       return false;
     });
@@ -113,7 +111,7 @@ export function TaskCreate(title, description) {
       }
     })
     .catch((error) => {
-      store.dispatch(HideLoader())
+      store.dispatch(HideLoader());
       ErrorToast("Something went wrong !");
       return false;
     });
@@ -125,6 +123,7 @@ export function TaskListByStatus(Status) {
   return axios
     .get(URL, AxiosHeaders)
     .then((res) => {
+      alert(res)
       store.dispatch(HideLoader());
       if (res.status === 200) {
         if (Status === "New") {
@@ -164,7 +163,7 @@ export function SummaryRequest() {
       }
     })
     .catch((error) => {
-      store.dispatch(HideLoader())
+      store.dispatch(HideLoader());
       ErrorToast("Something went wrong !");
       return false;
     });
@@ -183,7 +182,7 @@ export function DeleteRequest(id) {
       }
     })
     .catch((error) => {
-      store.dispatch(HideLoader())
+      store.dispatch(HideLoader());
       ErrorToast("Something went wrong !");
       return false;
     });
@@ -201,7 +200,7 @@ export function UpdateRequest(id, status) {
       }
     })
     .catch((error) => {
-      store.dispatch(HideLoader())
+      store.dispatch(HideLoader());
       ErrorToast("Something went wrong !");
       return false;
     });
@@ -216,12 +215,12 @@ export function GetProfileDetailsRequest() {
       store.dispatch(HideLoader());
       if (Result.status === 200) {
         store.dispatch(SetProfile(Result.data["data"][0]));
-        SuccessToast("Update Success");
+        // SuccessToast("Update Success");
         return true;
       }
     })
     .catch((error) => {
-      store.dispatch(HideLoader())
+      store.dispatch(HideLoader());
       ErrorToast("Something went wrong !");
       return false;
     });
@@ -262,7 +261,7 @@ export function ProfileUpdateRequest(
       }
     })
     .catch((error) => {
-      store.dispatch(HideLoader())
+      store.dispatch(HideLoader());
       ErrorToast("Something went wrong !");
       return false;
     });
@@ -289,7 +288,7 @@ export async function RecoverVerifyEmailRequest(email) {
       return false;
     }
   } catch (error) {
-    console.log(error)
+    console.log(error);
     ErrorToast("Something Went Wrong");
     store.dispatch(HideLoader());
     return false;

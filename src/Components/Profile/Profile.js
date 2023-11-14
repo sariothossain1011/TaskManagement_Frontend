@@ -32,7 +32,7 @@ const Profile = () => {
         else{
             ProfileUpdateRequest(email,firstName,lastName,mobile,photo,password).then((res)=>{
                 if(res===true){
-                    SuccessToast("Profile Update Success")
+                    // SuccessToast("Profile Update Success")
                     navigate('/')
                 }
             })

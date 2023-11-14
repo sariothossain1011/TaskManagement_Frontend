@@ -60,7 +60,7 @@ const Registration = () => {
                                 <br />
                                 <input ref={(input)=>passwordRef=input} type="password" className='form-control animated fadeInUp' placeholder='password'/>
                                 <br />
-                                <button onClick={SaveData} className="btn mt-3 w-100 float-end btn-primary animated fadeInUp">Complete</button>
+                                <button onClick={SaveData} className="btn mt-3 w-100 float-end btn-primary animated fadeInUp">Sing UP</button>
                             </div>
                         </div>
                     </div>
