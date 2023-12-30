@@ -19,10 +19,10 @@ import SendOTPPage from './Pages/AccountRecoverPage/SendOTPPage';
 import VerifyOTPPage from './Pages/AccountRecoverPage/VerifyOTPPage';
 import CreatePasswordPage from './Pages/AccountRecoverPage/CreatePasswordPage';
 
+import ReactGA from 'react-ga';
 
-
-
-
+const gaTrackingID = 'UA-297418343-1';
+ReactGA.initialize(gaTrackingID)
 const App = () => {
 
   if(getToken()){
