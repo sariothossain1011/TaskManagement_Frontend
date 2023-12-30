@@ -21,7 +21,7 @@ import CreatePasswordPage from './Pages/AccountRecoverPage/CreatePasswordPage';
 
 import ReactGA from 'react-ga';
 
-const gaTrackingID = 'UA-297418343-1';
+const gaTrackingID = 'UA-297418343-2';
 ReactGA.initialize(gaTrackingID)
 const App = () => {
 
