@@ -18,8 +18,11 @@ import {
 import store from "../Redux/Store/Store";
 import { ErrorToast, SuccessToast } from "../Helpers/Validation";
 const API = "https://task-management-server-dusky.vercel.app/api/v1/";
-
+// const API = "http://localhost:8080/api/v1/";
 let AxiosHeaders = { headers: { token: getToken() } };
+
+
+
 
 // REGISTRATION REQUEST
 export function RegistrationRequest(
@@ -286,7 +289,6 @@ export async function RecoverVerifyEmailRequest(email) {
       return false;
     }
   } catch (error) {
-    console.log(error);
     ErrorToast("Something Went Wrong");
     store.dispatch(HideLoader());
     return false;

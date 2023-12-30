@@ -59,7 +59,7 @@ const Progress = () => {
                                             <h6 className="animated fadeInUp">{item.title}</h6>
                                             <p className="animated fadeInUp">{item.description}</p>
                                             <p className="m-0 animated fadeInUp p-0">
-                                                <a className="icon-nav text-primary mx-1"><AiOutlineCalendar />{item.createDate}</a>
+                                                <a className="icon-nav text-primary mx-1" href='#'><AiOutlineCalendar />{item.createDate}</a>
                                                 <a onClick={UpdateStatus.bind(this,item._id,item.status)}  className="icon-nav text-primary mx-1"><AiOutlineEdit /></a>
                                                 <a onClick={DeleteItem.bind(this,item._id)} className="icon-nav text-danger mx-1"><AiOutlineDelete /></a>
                                                 <a className="badge float-end bg-success"> {item.status} </a>
